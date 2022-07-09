@@ -9,5 +9,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ ip : req.headers['X-Real-IP'] })
+  res.status(200).json({ ip : req.headers['x-real-ip'] })
 }
